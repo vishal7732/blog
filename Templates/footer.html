@@ -1,0 +1,51 @@
+{% load static %}
+
+   <!-- Page Footer-->
+    <footer class="main-footer" style="background-color: black;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="menus d-flex">
+                <ul class="list-unstyled">
+                  <li> <a href="#">My Account</a></li>
+                  <li> <a href="#">Add Listing</a></li>
+                  <li> <a href="#">Pricing</a></li>
+                  <li> <a href="#">Privacy &amp; Policy</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                  <li> <a href="#">Our Partners</a></li>
+                  <li> <a href="#">FAQ</a></li>
+                  <li> <a href="#">How It Works</a></li>
+                  <li> <a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <!-- Newsletter Section-->
+    <section class="newsletter no-padding-top">    
+      <h2 style="color: white;">Subscribe to Newsletter</h2>
+      <p>
+        Subscribe now to get the latest news in the industry
+      </p>
+              <form action="." method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                  <input type="email" name="email" id="email" placeholder="Type your email address">
+                  <button style="background-color: rgb(247, 223, 9); color: black;" type="submit" class="submit">Subscribe</button>
+                </div>
+              </form>
+    </section>
+    
+            </div>
+          </div>
+        </div>
+        <div class="copyrights">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>&copy; 2020. All rights reserved. </p>
+              </div>          
+            </div>
+          </div>
+        </div>
+      </footer>
