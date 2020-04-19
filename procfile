@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 web: gunicorn blogs.wsgi --log-file -
-=======
-web: gunicorn blogs.wsgi --log-file -
->>>>>>> da22436342d419426bfcd744c17e8db1d4c0c25c
